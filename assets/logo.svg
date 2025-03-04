@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+    <style>
+        .logo-path {
+            fill: #00ff88;
+            stroke: none;
+            transition: all 0.3s ease;
+        }
+        .logo-path:hover {
+            fill: #ffffff;
+        }
+    </style>
+    <path class="logo-path" d="M25,2 L48,48 L2,48 Z"/>
+</svg>

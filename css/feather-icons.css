@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Feather';
+    src: url('../fonts/feather.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[data-feather] {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}

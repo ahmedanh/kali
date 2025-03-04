@@ -1,0 +1,343 @@
+
+:root {
+    --main-color: #1a1a1a;
+    --accent-color: #00ff88;
+    --text-color: #ffffff;
+    --danger-color: #ff3333;
+    --card-bg: #2a2a2a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tajawal', 'Cairo', monospace;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Parallax background effect */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(26,26,26,0.95) 100%);
+    z-index: -1;
+}
+
+/* Neon text effect */
+.neon-text {
+    color: #fff;
+    text-shadow: 0 0 5px var(--accent-color),
+                 0 0 10px var(--accent-color),
+                 0 0 20px var(--accent-color),
+                 0 0 40px var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.neon-text:hover {
+    text-shadow: 0 0 5px var(--accent-color),
+                 0 0 10px var(--accent-color),
+                 0 0 20px var(--accent-color),
+                 0 0 40px var(--accent-color),
+                 0 0 80px var(--accent-color);
+}
+
+/* Legal Notice */
+.legal-notice {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--text-color);
+    padding: 5px 10px;
+    font-size: 12px;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo h1 {
+    font-size: 2rem;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-toggle {
+    background-color: transparent;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Tajawal', 'Cairo', monospace;
+    transition: all 0.3s ease;
+}
+
+.btn-toggle:hover {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+/* Main Content */
+main {
+    padding: 40px 5%;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+/* Categories */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.category-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 255, 136, 0.2);
+    border-color: var(--accent-color);
+}
+
+.category-card h3 {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+/* Tools */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.tool-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid transparent;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 255, 136, 0.2);
+    border-color: var(--accent-color);
+}
+
+.dangerous-tool {
+    border: 2px dashed var(--danger-color);
+}
+
+.tool-card h3 {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.danger-level {
+    font-size: 0.8rem;
+    color: var(--danger-color);
+}
+
+.tool-card .category-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.code-example {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 4px;
+    margin: 15px 0;
+    overflow-x: auto;
+    font-family: monospace;
+    border-left: 3px solid var(--accent-color);
+}
+
+.tool-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.tool-btn {
+    background-color: transparent;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.tool-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+.pdf-btn {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 5%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 0.9rem;
+}
+
+.email-display {
+    opacity: 0;
+    animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+/* Icon shake animation */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-3px); }
+    40%, 80% { transform: translateX(3px); }
+}
+
+.tool-card:hover .danger-level {
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-grid,
+    .tools-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-grid,
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .tool-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .tool-btn {
+        width: 100%;
+    }
+}
+
+/* Dark mode is the default, but let's add a class for potential light mode */
+.light-mode {
+    --main-color: #f5f5f5;
+    --card-bg: #ffffff;
+    --text-color: #1a1a1a;
+}
+
+/* RTL support */
+[dir="rtl"] .section-title::after {
+    right: 0;
+    left: auto;
+}
+
+[dir="rtl"] .tool-card .category-tag {
+    right: auto;
+    left: 10px;
+}
+
+[dir="rtl"] .code-example {
+    border-left: none;
+    border-right: 3px solid var(--accent-color);
+}

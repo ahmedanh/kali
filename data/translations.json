@@ -1,0 +1,82 @@
+{
+    "legal_notice": {
+        "en": "This website is for educational purposes only - all tools belong to their original developers",
+        "ar": "هذا الموقع لأغراض تعليمية فقط - جميع الأدوات ملك لمطوريها الأصليين"
+    },
+    "categories": {
+        "en": "Categories",
+        "ar": "التصنيفات"
+    },
+    "all_tools": {
+        "en": "All Tools",
+        "ar": "كل الأدوات"
+    },
+    "search_placeholder": {
+        "en": "Search tools...",
+        "ar": "البحث عن الأدوات..."
+    },
+    "documentation": {
+        "en": "Documentation",
+        "ar": "التوثيق"
+    },
+    "usage_example": {
+        "en": "Usage Example",
+        "ar": "مثال الاستخدام"
+    },
+    "danger_level": {
+        "en": "Danger Level",
+        "ar": "مستوى الخطر"
+    },
+    "tutorial": {
+        "en": "Tutorial",
+        "ar": "الدرس التعليمي"
+    },
+    "category_Information Gathering": {
+        "en": "Information Gathering",
+        "ar": "جمع المعلومات"
+    },
+    "category_Vulnerability Analysis": {
+        "en": "Vulnerability Analysis",
+        "ar": "تحليل الثغرات"
+    },
+    "category_Web Application Analysis": {
+        "en": "Web Application Analysis",
+        "ar": "تحليل تطبيقات الويب"
+    },
+    "category_Database Assessment": {
+        "en": "Database Assessment",
+        "ar": "تقييم قواعد البيانات"
+    },
+    "category_Password Attacks": {
+        "en": "Password Attacks",
+        "ar": "هجمات كلمات المرور"
+    },
+    "category_Wireless Attacks": {
+        "en": "Wireless Attacks",
+        "ar": "هجمات اللاسلكي"
+    },
+    "category_Reverse Engineering": {
+        "en": "Reverse Engineering",
+        "ar": "الهندسة العكسية"
+    },
+    "category_Exploitation Tools": {
+        "en": "Exploitation Tools",
+        "ar": "أدوات الاستغلال"
+    },
+    "category_Sniffing & Spoofing": {
+        "en": "Sniffing & Spoofing",
+        "ar": "التنصت والتزوير"
+    },
+    "category_Post Exploitation": {
+        "en": "Post Exploitation",
+        "ar": "ما بعد الاستغلال"
+    },
+    "category_Forensics": {
+        "en": "Forensics",
+        "ar": "التحليل الجنائي"
+    },
+    "category_Reporting Tools": {
+        "en": "Reporting Tools",
+        "ar": "أدوات التقارير"
+    }
+}

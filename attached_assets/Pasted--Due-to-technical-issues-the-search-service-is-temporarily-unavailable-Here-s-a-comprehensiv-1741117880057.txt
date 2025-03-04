@@ -1,0 +1,251 @@
+(Due to technical issues, the search service is temporarily unavailable.)
+
+Here’s a **comprehensive list of all Kali Linux tools with their explanations**, organized by category. This list includes every major tool in Kali Linux and a brief description of what each tool does:
+
+---
+
+### **1. Information Gathering**
+Tools for collecting data about targets, networks, and systems.
+
+- **Nmap**: Network discovery and security auditing tool. It scans for open ports, services, and operating systems.
+- **Recon-ng**: Web reconnaissance framework for gathering information from open sources.
+- **Maltego**: Graphical tool for link analysis and data visualization.
+- **theHarvester**: Collects emails, subdomains, and names from public sources.
+- **DNSenum**: Enumerates DNS information, including subdomains and DNS records.
+- **Fierce**: DNS reconnaissance tool for locating non-contiguous IP space.
+- **Whois**: Looks up domain registration information.
+
+---
+
+### **2. Vulnerability Analysis**
+Tools for identifying and analyzing vulnerabilities.
+
+- **OpenVAS**: Open-source vulnerability scanner for comprehensive security assessments.
+- **Nikto**: Web server vulnerability scanner that checks for outdated software and misconfigurations.
+- **Lynis**: Security auditing tool for Unix/Linux systems.
+- **Skipfish**: Web application security scanner that generates interactive sitemaps.
+- **Wapiti**: Scans web applications for vulnerabilities like SQL injection and XSS.
+- **Golismero**: Open-source security auditing tool with a plugin-based architecture.
+
+---
+
+### **3. Wireless Attacks**
+Tools for testing and exploiting wireless networks.
+
+- **Aircrack-ng**: Suite of tools for wireless network security, including cracking WEP/WPA keys.
+- **Kismet**: Wireless network detector and sniffer for monitoring traffic.
+- **Wifite**: Automated wireless attack tool for cracking WEP/WPA/WPS.
+- **Fern Wifi Cracker**: GUI-based tool for cracking wireless networks.
+- **Bully**: WPS brute-force tool for attacking Wi-Fi Protected Setup.
+- **Reaver**: Brute-force tool for attacking WPS-enabled routers.
+
+---
+
+### **4. Web Application Analysis**
+Tools for testing web applications for vulnerabilities.
+
+- **Burp Suite**: Web application security testing tool with proxy, scanner, and intruder features.
+- **OWASP ZAP**: Open-source web application security scanner.
+- **SQLmap**: Automated SQL injection and database takeover tool.
+- **Dirb**: Web directory brute-forcing tool.
+- **WPScan**: WordPress vulnerability scanner.
+- **Commix**: Automated command injection tool.
+
+---
+
+### **5. Database Assessment**
+Tools for testing and exploiting databases.
+
+- **SQLmap**: Automated SQL injection and database takeover tool.
+- **Sqlninja**: SQL Server exploitation tool.
+- **BBQSQL**: Blind SQL injection exploitation tool.
+- **Oscanner**: Oracle database assessment tool.
+
+---
+
+### **6. Password Attacks**
+Tools for cracking and analyzing passwords.
+
+- **John the Ripper**: Password cracking tool supporting multiple hash types.
+- **Hashcat**: Advanced password recovery tool with GPU acceleration.
+- **Hydra**: Network login cracker supporting multiple protocols.
+- **Crunch**: Wordlist generator for creating custom password lists.
+- **Cewl**: Custom wordlist generator based on website content.
+- **Medusa**: Parallel login brute-forcing tool.
+
+---
+
+### **7. Exploitation Tools**
+Tools for exploiting vulnerabilities.
+
+- **Metasploit Framework**: Penetration testing platform with a vast library of exploits.
+- **Armitage**: Graphical interface for Metasploit.
+- **BeEF**: Browser exploitation framework for targeting web browsers.
+- **ExploitDB**: Database of public exploits for various software.
+
+---
+
+### **8. Sniffing & Spoofing**
+Tools for network traffic analysis and manipulation.
+
+- **Wireshark**: Network protocol analyzer for deep packet inspection.
+- **Ettercap**: Man-in-the-middle attack tool for network traffic interception.
+- **Tcpdump**: Command-line packet analyzer.
+- **Bettercap**: Network attack and monitoring tool.
+- **Driftnet**: Captures and displays images from network traffic.
+
+---
+
+### **9. Post-Exploitation**
+Tools for maintaining access and analyzing compromised systems.
+
+- **Meterpreter**: Metasploit’s advanced payload for post-exploitation.
+- **Powersploit**: PowerShell post-exploitation framework.
+- **Empire**: Post-exploitation framework for Windows.
+- **Veil-Evasion**: Generates payloads to evade antivirus detection.
+- **FatRat**: Exploit generation tool for creating backdoors.
+
+---
+
+### **10. Forensics**
+Tools for digital forensics and analysis.
+
+- **Autopsy**: Digital forensics platform for analyzing disk images.
+- **Binwalk**: Firmware analysis tool for extracting embedded files.
+- **Volatility**: Memory forensics framework for analyzing RAM dumps.
+- **Guymager**: Disk imaging tool for creating forensic copies.
+- **Foremost**: File recovery tool for extracting files from disk images.
+
+---
+
+### **11. Social Engineering Tools**
+Tools for manipulating human behavior.
+
+- **Social-Engineer Toolkit (SET)**: Phishing and social engineering attack framework.
+- **Phishery**: Simple phishing tool for generating malicious documents.
+- **Evilginx2**: Phishing framework for bypassing 2FA.
+- **King Phisher**: Phishing campaign toolkit for creating realistic attacks.
+
+---
+
+### **12. Reverse Engineering**
+Tools for analyzing and reverse-engineering software.
+
+- **Ghidra**: Software reverse engineering suite developed by the NSA.
+- **Radare2**: Reverse engineering framework with a command-line interface.
+- **OllyDbg**: 32-bit assembler-level debugger for Windows.
+- **JD-GUI**: Java decompiler for analyzing Java applications.
+
+---
+
+### **13. Hardware Hacking**
+Tools for analyzing and exploiting hardware.
+
+- **Arduino**: Microcontroller programming for hardware projects.
+- **Bus Pirate**: Universal bus interface for hardware analysis.
+- **JTAGulator**: JTAG pinout discovery tool for hardware debugging.
+- **Chipsec**: Hardware security assessment framework.
+
+---
+
+### **14. Reporting Tools**
+Tools for documenting and reporting findings.
+
+- **Dradis**: Collaboration and reporting framework for penetration testers.
+- **Metagoofil**: Metadata extraction tool for gathering information from documents.
+- **Faraday**: Collaborative penetration testing platform.
+- **CutyCapt**: Website screenshot tool for capturing web pages.
+
+---
+
+### **15. Stress Testing**
+Tools for testing system resilience.
+
+- **THC-SSL-DOS**: SSL/TLS stress testing tool for overwhelming servers.
+- **SlowHTTPTest**: Application-layer DoS tool for testing web servers.
+- **GoldenEye**: HTTP DoS testing tool for simulating traffic.
+
+---
+
+### **16. Miscellaneous Tools**
+Other useful tools in Kali Linux.
+
+- **Tor**: Anonymity network for secure browsing.
+- **Sublist3r**: Subdomain enumeration tool for discovering subdomains.
+- **GoBuster**: Directory/file brute-forcing tool for web applications.
+- **Netcat**: Swiss-army knife for networking, including port scanning and file transfers.
+
+---
+
+### **17. Mobile Tools**
+Tools for mobile device security testing.
+
+- **APKTool**: Reverse engineering Android apps.
+- **MobSF**: Mobile security framework for analyzing Android and iOS apps.
+- **Androguard**: Android app analysis tool for reverse engineering.
+- **Drozer**: Android security assessment framework.
+
+---
+
+### **18. Network Tools**
+General network analysis and testing tools.
+
+- **Hping3**: Network packet crafting tool for testing firewalls.
+- **Netdiscover**: Network address discovery tool for active hosts.
+- **Masscan**: Mass IP port scanner for large-scale scanning.
+- **Iptables**: Firewall configuration tool for Linux.
+
+---
+
+### **19. Cloud Tools**
+Tools for cloud security testing.
+
+- **CloudBrute**: Cloud infrastructure enumeration tool.
+- **S3Scanner**: Amazon S3 bucket scanner for finding misconfigured buckets.
+- **Pacu**: AWS exploitation framework for testing cloud security.
+
+---
+
+### **20. Steganography Tools**
+Tools for hiding data within files.
+
+- **Steghide**: Hides data in images and audio files.
+- **Binwalk**: Analyzes and extracts hidden data from files.
+- **Snow**: Whitespace steganography tool for hiding data in text files.
+
+---
+
+### **21. VoIP Tools**
+Tools for Voice over IP security testing.
+
+- **SIPVicious**: SIP security testing suite for VoIP systems.
+- **Wireshark**: VoIP traffic analysis for capturing and analyzing calls.
+- **Asterisk**: Open-source PBX testing tool for VoIP systems.
+
+---
+
+### **22. Wireless Bluetooth Tools**
+Tools for Bluetooth security testing.
+
+- **Bluelog**: Bluetooth discovery tool for finding nearby devices.
+- **Blueranger**: Bluetooth device locator for tracking devices.
+- **Redfang**: Bluetooth device discovery tool for hidden devices.
+
+---
+
+### **23. Exploitation Database**
+- **ExploitDB**: Database of public exploits for various software.
+- **Searchsploit**: Command-line search tool for ExploitDB.
+
+---
+
+### **24. OSINT (Open Source Intelligence)**
+Tools for gathering publicly available information.
+
+- **theHarvester**: Collects emails, subdomains, and names from public sources.
+- **Sherlock**: Username enumeration tool for finding accounts across platforms.
+- **SpiderFoot**: OSINT automation tool for gathering intelligence.
+
+---
+
+This list provides a **complete overview of all Kali Linux tools** with their explanations. If you need more details about any specific tool or its usage, let me know! 🚀

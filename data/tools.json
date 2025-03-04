@@ -1,0 +1,973 @@
+
+[
+    {
+        "tool_name": "Nmap",
+        "category": "Information Gathering",
+        "description": {
+            "en": "Network discovery and security auditing tool. It scans for open ports, services, and operating systems.",
+            "ar": "أداة اكتشاف الشبكة والتدقيق الأمني. تقوم بفحص المنافذ المفتوحة والخدمات وأنظمة التشغيل."
+        },
+        "usage_example": "nmap -sV -sC target.com",
+        "official_docs": "https://nmap.org/docs.html"
+    },
+    {
+        "tool_name": "Recon-ng",
+        "category": "Information Gathering",
+        "description": {
+            "en": "Web reconnaissance framework for gathering information from open sources.",
+            "ar": "إطار استطلاع الويب لجمع المعلومات من المصادر المفتوحة."
+        },
+        "usage_example": "recon-ng",
+        "official_docs": "https://github.com/lanmaster53/recon-ng"
+    },
+    {
+        "tool_name": "Maltego",
+        "category": "Information Gathering",
+        "description": {
+            "en": "Graphical tool for link analysis and data visualization.",
+            "ar": "أداة رسومية لتحليل الروابط وتصور البيانات."
+        },
+        "usage_example": "maltego",
+        "official_docs": "https://www.maltego.com/docs/"
+    },
+    {
+        "tool_name": "theHarvester",
+        "category": "Information Gathering",
+        "description": {
+            "en": "Collects emails, subdomains, and names from public sources.",
+            "ar": "يجمع رسائل البريد الإلكتروني والنطاقات الفرعية والأسماء من المصادر العامة."
+        },
+        "usage_example": "theHarvester -d example.com -b all",
+        "official_docs": "https://github.com/laramies/theHarvester"
+    },
+    {
+        "tool_name": "DNSenum",
+        "category": "Information Gathering",
+        "description": {
+            "en": "Enumerates DNS information, including subdomains and DNS records.",
+            "ar": "يعدد معلومات DNS، بما في ذلك النطاقات الفرعية وسجلات DNS."
+        },
+        "usage_example": "dnsenum example.com",
+        "official_docs": "https://github.com/fwaeytens/dnsenum"
+    },
+    {
+        "tool_name": "Fierce",
+        "category": "Information Gathering",
+        "description": {
+            "en": "DNS reconnaissance tool for locating non-contiguous IP space.",
+            "ar": "أداة استطلاع DNS لتحديد مساحة IP غير المتجاورة."
+        },
+        "usage_example": "fierce -domain example.com",
+        "official_docs": "https://github.com/mschwager/fierce"
+    },
+    {
+        "tool_name": "Whois",
+        "category": "Information Gathering",
+        "description": {
+            "en": "Looks up domain registration information.",
+            "ar": "يبحث عن معلومات تسجيل المجال."
+        },
+        "usage_example": "whois example.com",
+        "official_docs": "https://www.whois.net/"
+    },
+    {
+        "tool_name": "OpenVAS",
+        "category": "Vulnerability Analysis",
+        "description": {
+            "en": "Open-source vulnerability scanner for comprehensive security assessments.",
+            "ar": "ماسح الثغرات مفتوح المصدر للتقييمات الأمنية الشاملة."
+        },
+        "usage_example": "openvas-start",
+        "official_docs": "https://www.openvas.org/"
+    },
+    {
+        "tool_name": "Nikto",
+        "category": "Vulnerability Analysis",
+        "description": {
+            "en": "Web server vulnerability scanner that checks for outdated software and misconfigurations.",
+            "ar": "ماسح ثغرات خادم الويب الذي يتحقق من البرامج القديمة والإعدادات الخاطئة."
+        },
+        "usage_example": "nikto -h target.com",
+        "official_docs": "https://cirt.net/Nikto2"
+    },
+    {
+        "tool_name": "Lynis",
+        "category": "Vulnerability Analysis",
+        "description": {
+            "en": "Security auditing tool for Unix/Linux systems.",
+            "ar": "أداة تدقيق أمان لأنظمة يونكس/لينكس."
+        },
+        "usage_example": "lynis audit system",
+        "official_docs": "https://cisofy.com/lynis/"
+    },
+    {
+        "tool_name": "Skipfish",
+        "category": "Vulnerability Analysis",
+        "description": {
+            "en": "Web application security scanner that generates interactive sitemaps.",
+            "ar": "ماسح أمان تطبيقات الويب الذي ينشئ خرائط مواقع تفاعلية."
+        },
+        "usage_example": "skipfish -o output_dir -S wordlist.wl http://target.com",
+        "official_docs": "https://github.com/spinkham/skipfish"
+    },
+    {
+        "tool_name": "Wapiti",
+        "category": "Vulnerability Analysis",
+        "description": {
+            "en": "Scans web applications for vulnerabilities like SQL injection and XSS.",
+            "ar": "يفحص تطبيقات الويب بحثًا عن ثغرات مثل حقن SQL و XSS."
+        },
+        "usage_example": "wapiti -u http://target.com/",
+        "official_docs": "https://wapiti.sourceforge.io/"
+    },
+    {
+        "tool_name": "Golismero",
+        "category": "Vulnerability Analysis",
+        "description": {
+            "en": "Open-source security auditing tool with a plugin-based architecture.",
+            "ar": "أداة تدقيق أمان مفتوحة المصدر مع بنية قائمة على المكونات الإضافية."
+        },
+        "usage_example": "golismero scan example.com",
+        "official_docs": "https://github.com/golismero/golismero"
+    },
+    {
+        "tool_name": "Aircrack-ng",
+        "category": "Wireless Attacks",
+        "description": {
+            "en": "Suite of tools for wireless network security, including cracking WEP/WPA keys.",
+            "ar": "مجموعة أدوات لأمان الشبكات اللاسلكية، بما في ذلك اختراق مفاتيح WEP/WPA."
+        },
+        "usage_example": "aircrack-ng -w wordlist.txt capture.cap",
+        "official_docs": "https://www.aircrack-ng.org/"
+    },
+    {
+        "tool_name": "Kismet",
+        "category": "Wireless Attacks",
+        "description": {
+            "en": "Wireless network detector and sniffer for monitoring traffic.",
+            "ar": "كاشف الشبكات اللاسلكية ومراقب حركة المرور."
+        },
+        "usage_example": "kismet",
+        "official_docs": "https://www.kismetwireless.net/"
+    },
+    {
+        "tool_name": "Wifite",
+        "category": "Wireless Attacks",
+        "description": {
+            "en": "Automated wireless attack tool for cracking WEP/WPA/WPS.",
+            "ar": "أداة هجوم لاسلكية آلية لاختراق WEP/WPA/WPS."
+        },
+        "usage_example": "wifite",
+        "official_docs": "https://github.com/derv82/wifite"
+    },
+    {
+        "tool_name": "Fern Wifi Cracker",
+        "category": "Wireless Attacks",
+        "description": {
+            "en": "GUI-based tool for cracking wireless networks.",
+            "ar": "أداة تعتمد على واجهة المستخدم الرسومية لاختراق الشبكات اللاسلكية."
+        },
+        "usage_example": "fern-wifi-cracker",
+        "official_docs": "https://github.com/savio-code/fern-wifi-cracker"
+    },
+    {
+        "tool_name": "Bully",
+        "category": "Wireless Attacks",
+        "description": {
+            "en": "WPS brute-force tool for attacking Wi-Fi Protected Setup.",
+            "ar": "أداة القوة الغاشمة WPS لمهاجمة إعداد Wi-Fi المحمي."
+        },
+        "usage_example": "bully -b [BSSID] -e [ESSID] -c [CHANNEL] [INTERFACE]",
+        "official_docs": "https://github.com/aanarchyy/bully"
+    },
+    {
+        "tool_name": "Reaver",
+        "category": "Wireless Attacks",
+        "description": {
+            "en": "Brute-force tool for attacking WPS-enabled routers.",
+            "ar": "أداة القوة الغاشمة لمهاجمة أجهزة التوجيه التي تدعم WPS."
+        },
+        "usage_example": "reaver -i wlan0 -b [BSSID] -vv",
+        "official_docs": "https://github.com/t6x/reaver-wps-fork-t6x"
+    },
+    {
+        "tool_name": "Burp Suite",
+        "category": "Web Application Analysis",
+        "description": {
+            "en": "Web application security testing tool with proxy, scanner, and intruder features.",
+            "ar": "أداة اختبار أمان تطبيقات الويب مع ميزات الوكيل والماسح والمتسلل."
+        },
+        "usage_example": "burpsuite",
+        "official_docs": "https://portswigger.net/burp"
+    },
+    {
+        "tool_name": "OWASP ZAP",
+        "category": "Web Application Analysis",
+        "description": {
+            "en": "Open-source web application security scanner.",
+            "ar": "ماسح أمان تطبيقات الويب مفتوح المصدر."
+        },
+        "usage_example": "zaproxy",
+        "official_docs": "https://www.zaproxy.org/"
+    },
+    {
+        "tool_name": "SQLmap",
+        "category": "Web Application Analysis",
+        "description": {
+            "en": "Automated SQL injection and database takeover tool.",
+            "ar": "أداة آلية لحقن SQL والاستيلاء على قاعدة البيانات."
+        },
+        "usage_example": "sqlmap -u \"http://target.com/page.php?id=1\" --dbs",
+        "official_docs": "https://sqlmap.org/"
+    },
+    {
+        "tool_name": "Dirb",
+        "category": "Web Application Analysis",
+        "description": {
+            "en": "Web directory brute-forcing tool.",
+            "ar": "أداة القوة الغاشمة لدليل الويب."
+        },
+        "usage_example": "dirb http://target.com/ wordlist.txt",
+        "official_docs": "http://dirb.sourceforge.net/"
+    },
+    {
+        "tool_name": "WPScan",
+        "category": "Web Application Analysis",
+        "description": {
+            "en": "WordPress vulnerability scanner.",
+            "ar": "ماسح ثغرات ووردبريس."
+        },
+        "usage_example": "wpscan --url http://wordpress.site",
+        "official_docs": "https://wpscan.com/wordpress-security-scanner"
+    },
+    {
+        "tool_name": "Commix",
+        "category": "Web Application Analysis",
+        "description": {
+            "en": "Automated command injection tool.",
+            "ar": "أداة حقن الأوامر التلقائية."
+        },
+        "usage_example": "commix --url=\"http://target.com/vuln.php?id=1\"",
+        "official_docs": "https://github.com/commixproject/commix"
+    },
+    {
+        "tool_name": "Sqlninja",
+        "category": "Database Assessment",
+        "description": {
+            "en": "SQL Server exploitation tool.",
+            "ar": "أداة استغلال خادم SQL."
+        },
+        "usage_example": "sqlninja -m test -f sqlninja.conf",
+        "official_docs": "http://sqlninja.sourceforge.net/"
+    },
+    {
+        "tool_name": "BBQSQL",
+        "category": "Database Assessment",
+        "description": {
+            "en": "Blind SQL injection exploitation tool.",
+            "ar": "أداة استغلال حقن SQL الأعمى."
+        },
+        "usage_example": "bbqsql",
+        "official_docs": "https://github.com/Neohapsis/bbqsql"
+    },
+    {
+        "tool_name": "Oscanner",
+        "category": "Database Assessment",
+        "description": {
+            "en": "Oracle database assessment tool.",
+            "ar": "أداة تقييم قاعدة بيانات أوراكل."
+        },
+        "usage_example": "oscanner -s target -P 1521",
+        "official_docs": "https://github.com/inquisb/oscanner"
+    },
+    {
+        "tool_name": "John the Ripper",
+        "category": "Password Attacks",
+        "description": {
+            "en": "Password cracking tool supporting multiple hash types.",
+            "ar": "أداة كسر كلمات المرور التي تدعم أنواع متعددة من التجزئة."
+        },
+        "usage_example": "john --wordlist=wordlist.txt hash.txt",
+        "official_docs": "https://www.openwall.com/john/"
+    },
+    {
+        "tool_name": "Hashcat",
+        "category": "Password Attacks",
+        "description": {
+            "en": "Advanced password recovery tool with GPU acceleration.",
+            "ar": "أداة متقدمة لاستعادة كلمات المرور مع تسريع وحدة معالجة الرسومات."
+        },
+        "usage_example": "hashcat -m 0 hash.txt wordlist.txt",
+        "official_docs": "https://hashcat.net/wiki/"
+    },
+    {
+        "tool_name": "Hydra",
+        "category": "Password Attacks",
+        "description": {
+            "en": "Network login cracker supporting multiple protocols.",
+            "ar": "كاسر تسجيل الدخول الشبكي الذي يدعم بروتوكولات متعددة."
+        },
+        "usage_example": "hydra -l user -P pass.txt target protocol",
+        "official_docs": "https://github.com/vanhauser-thc/thc-hydra"
+    },
+    {
+        "tool_name": "Crunch",
+        "category": "Password Attacks",
+        "description": {
+            "en": "Wordlist generator for creating custom password lists.",
+            "ar": "أداة إنشاء قوائم كلمات لإنشاء قوائم كلمات مرور مخصصة."
+        },
+        "usage_example": "crunch 6 8 abc123 -o wordlist.txt",
+        "official_docs": "https://sourceforge.net/projects/crunch-wordlist/"
+    },
+    {
+        "tool_name": "Cewl",
+        "category": "Password Attacks",
+        "description": {
+            "en": "Custom wordlist generator based on website content.",
+            "ar": "مولد قائمة كلمات مخصص بناءً على محتوى موقع الويب."
+        },
+        "usage_example": "cewl -d 2 -m 5 -w wordlist.txt http://target.com",
+        "official_docs": "https://github.com/digininja/CeWL"
+    },
+    {
+        "tool_name": "Medusa",
+        "category": "Password Attacks",
+        "description": {
+            "en": "Parallel login brute-forcing tool.",
+            "ar": "أداة القوة الغاشمة المتوازية لتسجيل الدخول."
+        },
+        "usage_example": "medusa -h target -u user -P passlist.txt -M http",
+        "official_docs": "https://github.com/jmk-foofus/medusa"
+    },
+    {
+        "tool_name": "Metasploit Framework",
+        "category": "Exploitation Tools",
+        "description": {
+            "en": "Penetration testing platform with a vast library of exploits.",
+            "ar": "منصة اختبار الاختراق مع مكتبة كبيرة من الاستغلالات."
+        },
+        "usage_example": "msfconsole",
+        "official_docs": "https://metasploit.com/docs"
+    },
+    {
+        "tool_name": "Armitage",
+        "category": "Exploitation Tools",
+        "description": {
+            "en": "Graphical interface for Metasploit.",
+            "ar": "واجهة رسومية لميتاسبلويت."
+        },
+        "usage_example": "armitage",
+        "official_docs": "http://www.fastandeasyhacking.com/"
+    },
+    {
+        "tool_name": "BeEF",
+        "category": "Exploitation Tools",
+        "description": {
+            "en": "Browser exploitation framework for targeting web browsers.",
+            "ar": "إطار عمل استغلال المتصفح لاستهداف متصفحات الويب."
+        },
+        "usage_example": "beef-xss",
+        "official_docs": "https://github.com/beefproject/beef/wiki"
+    },
+    {
+        "tool_name": "ExploitDB",
+        "category": "Exploitation Tools",
+        "description": {
+            "en": "Database of public exploits for various software.",
+            "ar": "قاعدة بيانات الاستغلالات العامة للبرامج المختلفة."
+        },
+        "usage_example": "searchsploit apache",
+        "official_docs": "https://www.exploit-db.com/"
+    },
+    {
+        "tool_name": "Wireshark",
+        "category": "Sniffing & Spoofing",
+        "description": {
+            "en": "Network protocol analyzer for deep packet inspection.",
+            "ar": "محلل بروتوكول الشبكة للفحص العميق للحزم."
+        },
+        "usage_example": "wireshark",
+        "official_docs": "https://www.wireshark.org/docs/"
+    },
+    {
+        "tool_name": "Ettercap",
+        "category": "Sniffing & Spoofing",
+        "description": {
+            "en": "Man-in-the-middle attack tool for network traffic interception.",
+            "ar": "أداة هجوم رجل في المنتصف لاعتراض حركة مرور الشبكة."
+        },
+        "usage_example": "ettercap -T -q -i eth0",
+        "official_docs": "http://ettercap.github.io/ettercap//"
+    },
+    {
+        "tool_name": "Tcpdump",
+        "category": "Sniffing & Spoofing",
+        "description": {
+            "en": "Command-line packet analyzer.",
+            "ar": "محلل حزم سطر الأوامر."
+        },
+        "usage_example": "tcpdump -i eth0 port 80",
+        "official_docs": "https://www.tcpdump.org/"
+    },
+    {
+        "tool_name": "Bettercap",
+        "category": "Sniffing & Spoofing",
+        "description": {
+            "en": "Network attack and monitoring tool.",
+            "ar": "أداة هجوم الشبكة والمراقبة."
+        },
+        "usage_example": "bettercap -iface eth0",
+        "official_docs": "https://www.bettercap.org/"
+    },
+    {
+        "tool_name": "Driftnet",
+        "category": "Sniffing & Spoofing",
+        "description": {
+            "en": "Captures and displays images from network traffic.",
+            "ar": "يلتقط ويعرض الصور من حركة مرور الشبكة."
+        },
+        "usage_example": "driftnet -i eth0",
+        "official_docs": "https://github.com/deiv/driftnet"
+    },
+    {
+        "tool_name": "Meterpreter",
+        "category": "Post-Exploitation",
+        "description": {
+            "en": "Metasploit's advanced payload for post-exploitation.",
+            "ar": "حمولة متقدمة من ميتاسبلويت لمرحلة ما بعد الاستغلال."
+        },
+        "usage_example": "use exploit/multi/handler; set payload windows/meterpreter/reverse_tcp",
+        "official_docs": "https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/"
+    },
+    {
+        "tool_name": "Powersploit",
+        "category": "Post-Exploitation",
+        "description": {
+            "en": "PowerShell post-exploitation framework.",
+            "ar": "إطار عمل PowerShell لمرحلة ما بعد الاستغلال."
+        },
+        "usage_example": "Import-Module PowerSploit",
+        "official_docs": "https://github.com/PowerShellMafia/PowerSploit"
+    },
+    {
+        "tool_name": "Empire",
+        "category": "Post-Exploitation",
+        "description": {
+            "en": "Post-exploitation framework for Windows.",
+            "ar": "إطار عمل لمرحلة ما بعد الاستغلال لنظام ويندوز."
+        },
+        "usage_example": "empire",
+        "official_docs": "https://github.com/BC-SECURITY/Empire"
+    },
+    {
+        "tool_name": "Veil-Evasion",
+        "category": "Post-Exploitation",
+        "description": {
+            "en": "Generates payloads to evade antivirus detection.",
+            "ar": "ينشئ حمولات للتهرب من كشف مضاد الفيروسات."
+        },
+        "usage_example": "veil",
+        "official_docs": "https://github.com/Veil-Framework/Veil"
+    },
+    {
+        "tool_name": "FatRat",
+        "category": "Post-Exploitation",
+        "description": {
+            "en": "Exploit generation tool for creating backdoors.",
+            "ar": "أداة إنشاء استغلال لإنشاء أبواب خلفية."
+        },
+        "usage_example": "fatrat",
+        "official_docs": "https://github.com/Screetsec/TheFatRat"
+    },
+    {
+        "tool_name": "Autopsy",
+        "category": "Forensics",
+        "description": {
+            "en": "Digital forensics platform for analyzing disk images.",
+            "ar": "منصة التحليل الجنائي الرقمي لتحليل صور القرص."
+        },
+        "usage_example": "autopsy",
+        "official_docs": "https://www.autopsy.com/documentation/"
+    },
+    {
+        "tool_name": "Binwalk",
+        "category": "Forensics",
+        "description": {
+            "en": "Firmware analysis tool for extracting embedded files.",
+            "ar": "أداة تحليل البرامج الثابتة لاستخراج الملفات المضمنة."
+        },
+        "usage_example": "binwalk -e firmware.bin",
+        "official_docs": "https://github.com/ReFirmLabs/binwalk"
+    },
+    {
+        "tool_name": "Volatility",
+        "category": "Forensics",
+        "description": {
+            "en": "Memory forensics framework for analyzing RAM dumps.",
+            "ar": "إطار التحليل الجنائي للذاكرة لتحليل مخرجات ذاكرة الوصول العشوائي."
+        },
+        "usage_example": "volatility -f memory.dmp imageinfo",
+        "official_docs": "https://www.volatilityfoundation.org/"
+    },
+    {
+        "tool_name": "Guymager",
+        "category": "Forensics",
+        "description": {
+            "en": "Disk imaging tool for creating forensic copies.",
+            "ar": "أداة تصوير القرص لإنشاء نسخ جنائية."
+        },
+        "usage_example": "guymager",
+        "official_docs": "https://guymager.sourceforge.io/"
+    },
+    {
+        "tool_name": "Foremost",
+        "category": "Forensics",
+        "description": {
+            "en": "File recovery tool for extracting files from disk images.",
+            "ar": "أداة استعادة الملفات لاستخراج الملفات من صور القرص."
+        },
+        "usage_example": "foremost -i image.dd -o output_dir",
+        "official_docs": "http://foremost.sourceforge.net/"
+    },
+    {
+        "tool_name": "Social-Engineer Toolkit (SET)",
+        "category": "Social Engineering Tools",
+        "description": {
+            "en": "Phishing and social engineering attack framework.",
+            "ar": "إطار هجوم التصيد والهندسة الاجتماعية."
+        },
+        "usage_example": "setoolkit",
+        "official_docs": "https://github.com/trustedsec/social-engineer-toolkit"
+    },
+    {
+        "tool_name": "Phishery",
+        "category": "Social Engineering Tools",
+        "description": {
+            "en": "Simple phishing tool for generating malicious documents.",
+            "ar": "أداة تصيد بسيطة لإنشاء مستندات ضارة."
+        },
+        "usage_example": "phishery -u http://evil.com/ template.docx output.docx",
+        "official_docs": "https://github.com/ryhanson/phishery"
+    },
+    {
+        "tool_name": "Evilginx2",
+        "category": "Social Engineering Tools",
+        "description": {
+            "en": "Phishing framework for bypassing 2FA.",
+            "ar": "إطار عمل التصيد لتجاوز المصادقة ثنائية العوامل."
+        },
+        "usage_example": "evilginx2",
+        "official_docs": "https://github.com/kgretzky/evilginx2"
+    },
+    {
+        "tool_name": "King Phisher",
+        "category": "Social Engineering Tools",
+        "description": {
+            "en": "Phishing campaign toolkit for creating realistic attacks.",
+            "ar": "مجموعة أدوات حملة التصيد لإنشاء هجمات واقعية."
+        },
+        "usage_example": "king-phisher",
+        "official_docs": "https://github.com/rsmusllp/king-phisher"
+    },
+    {
+        "tool_name": "Ghidra",
+        "category": "Reverse Engineering",
+        "description": {
+            "en": "Software reverse engineering suite developed by the NSA.",
+            "ar": "مجموعة هندسة عكسية للبرمجيات طورتها وكالة الأمن القومي."
+        },
+        "usage_example": "ghidra",
+        "official_docs": "https://ghidra-sre.org/"
+    },
+    {
+        "tool_name": "Radare2",
+        "category": "Reverse Engineering",
+        "description": {
+            "en": "Reverse engineering framework with a command-line interface.",
+            "ar": "إطار عمل الهندسة العكسية مع واجهة سطر الأوامر."
+        },
+        "usage_example": "r2 binary",
+        "official_docs": "https://rada.re/n/"
+    },
+    {
+        "tool_name": "OllyDbg",
+        "category": "Reverse Engineering",
+        "description": {
+            "en": "32-bit assembler-level debugger for Windows.",
+            "ar": "مصحح على مستوى المجمع 32 بت لنظام التشغيل Windows."
+        },
+        "usage_example": "ollydbg",
+        "official_docs": "http://www.ollydbg.de/"
+    },
+    {
+        "tool_name": "JD-GUI",
+        "category": "Reverse Engineering",
+        "description": {
+            "en": "Java decompiler for analyzing Java applications.",
+            "ar": "مفكك تجميع جافا لتحليل تطبيقات جافا."
+        },
+        "usage_example": "jd-gui",
+        "official_docs": "https://github.com/java-decompiler/jd-gui"
+    },
+    {
+        "tool_name": "Arduino",
+        "category": "Hardware Hacking",
+        "description": {
+            "en": "Microcontroller programming for hardware projects.",
+            "ar": "برمجة المتحكم الدقيق لمشاريع الأجهزة."
+        },
+        "usage_example": "arduino",
+        "official_docs": "https://www.arduino.cc/en/Guide"
+    },
+    {
+        "tool_name": "Bus Pirate",
+        "category": "Hardware Hacking",
+        "description": {
+            "en": "Universal bus interface for hardware analysis.",
+            "ar": "واجهة ناقل عالمية لتحليل الأجهزة."
+        },
+        "usage_example": "screen /dev/ttyUSB0 115200",
+        "official_docs": "http://dangerousprototypes.com/docs/Bus_Pirate"
+    },
+    {
+        "tool_name": "JTAGulator",
+        "category": "Hardware Hacking",
+        "description": {
+            "en": "JTAG pinout discovery tool for hardware debugging.",
+            "ar": "أداة اكتشاف منافذ JTAG لتصحيح الأخطاء في الأجهزة."
+        },
+        "usage_example": "jtagulator",
+        "official_docs": "http://www.grandideastudio.com/jtagulator/"
+    },
+    {
+        "tool_name": "Chipsec",
+        "category": "Hardware Hacking",
+        "description": {
+            "en": "Hardware security assessment framework.",
+            "ar": "إطار تقييم أمان الأجهزة."
+        },
+        "usage_example": "chipsec_main.py",
+        "official_docs": "https://github.com/chipsec/chipsec"
+    },
+    {
+        "tool_name": "Dradis",
+        "category": "Reporting Tools",
+        "description": {
+            "en": "Collaboration and reporting framework for penetration testers.",
+            "ar": "إطار التعاون وإعداد التقارير لمختبري الاختراق."
+        },
+        "usage_example": "dradis",
+        "official_docs": "https://dradisframework.com/ce/"
+    },
+    {
+        "tool_name": "Metagoofil",
+        "category": "Reporting Tools",
+        "description": {
+            "en": "Metadata extraction tool for gathering information from documents.",
+            "ar": "أداة استخراج البيانات الوصفية لجمع المعلومات من المستندات."
+        },
+        "usage_example": "metagoofil -d example.com -t pdf -l 10 -n 5 -o output -f results.html",
+        "official_docs": "https://github.com/laramies/metagoofil"
+    },
+    {
+        "tool_name": "Faraday",
+        "category": "Reporting Tools",
+        "description": {
+            "en": "Collaborative penetration testing platform.",
+            "ar": "منصة اختبار الاختراق التعاونية."
+        },
+        "usage_example": "faraday",
+        "official_docs": "https://github.com/infobyte/faraday"
+    },
+    {
+        "tool_name": "CutyCapt",
+        "category": "Reporting Tools",
+        "description": {
+            "en": "Website screenshot tool for capturing web pages.",
+            "ar": "أداة لقطة شاشة لموقع الويب لالتقاط صفحات الويب."
+        },
+        "usage_example": "cutycapt --url=http://example.com --out=example.png",
+        "official_docs": "https://github.com/hoehrmann/CutyCapt"
+    },
+    {
+        "tool_name": "THC-SSL-DOS",
+        "category": "Stress Testing",
+        "description": {
+            "en": "SSL/TLS stress testing tool for overwhelming servers.",
+            "ar": "أداة اختبار الإجهاد SSL/TLS لإغراق الخوادم."
+        },
+        "usage_example": "thc-ssl-dos target.com 443 --accept",
+        "official_docs": "https://github.com/hackerschoice/thc-tools"
+    },
+    {
+        "tool_name": "SlowHTTPTest",
+        "category": "Stress Testing",
+        "description": {
+            "en": "Application-layer DoS tool for testing web servers.",
+            "ar": "أداة رفض الخدمة على مستوى التطبيق لاختبار خوادم الويب."
+        },
+        "usage_example": "slowhttptest -c 1000 -H -g -o output -i 10 -r 200 -t GET -u http://target.com -x 24",
+        "official_docs": "https://github.com/shekyan/slowhttptest"
+    },
+    {
+        "tool_name": "GoldenEye",
+        "category": "Stress Testing",
+        "description": {
+            "en": "HTTP DoS testing tool for simulating traffic.",
+            "ar": "أداة اختبار رفض خدمة HTTP لمحاكاة حركة المرور."
+        },
+        "usage_example": "goldeneye http://target.com",
+        "official_docs": "https://github.com/jseidl/GoldenEye"
+    },
+    {
+        "tool_name": "Tor",
+        "category": "Miscellaneous Tools",
+        "description": {
+            "en": "Anonymity network for secure browsing.",
+            "ar": "شبكة إخفاء الهوية للتصفح الآمن."
+        },
+        "usage_example": "tor",
+        "official_docs": "https://www.torproject.org/"
+    },
+    {
+        "tool_name": "Sublist3r",
+        "category": "Miscellaneous Tools",
+        "description": {
+            "en": "Subdomain enumeration tool for discovering subdomains.",
+            "ar": "أداة تعداد المجالات الفرعية لاكتشاف النطاقات الفرعية."
+        },
+        "usage_example": "sublist3r -d example.com",
+        "official_docs": "https://github.com/aboul3la/Sublist3r"
+    },
+    {
+        "tool_name": "GoBuster",
+        "category": "Miscellaneous Tools",
+        "description": {
+            "en": "Directory/file brute-forcing tool for web applications.",
+            "ar": "أداة القوة الغاشمة للدليل/الملف لتطبيقات الويب."
+        },
+        "usage_example": "gobuster dir -u http://target.com -w wordlist.txt",
+        "official_docs": "https://github.com/OJ/gobuster"
+    },
+    {
+        "tool_name": "Netcat",
+        "category": "Miscellaneous Tools",
+        "description": {
+            "en": "Swiss-army knife for networking, including port scanning and file transfers.",
+            "ar": "أداة متعددة الاستخدامات للشبكات، بما في ذلك مسح المنافذ ونقل الملفات."
+        },
+        "usage_example": "nc -lvp 4444",
+        "official_docs": "https://netcat.sourceforge.net/"
+    },
+    {
+        "tool_name": "APKTool",
+        "category": "Mobile Tools",
+        "description": {
+            "en": "Reverse engineering Android apps.",
+            "ar": "الهندسة العكسية لتطبيقات أندرويد."
+        },
+        "usage_example": "apktool d app.apk",
+        "official_docs": "https://ibotpeaches.github.io/Apktool/"
+    },
+    {
+        "tool_name": "MobSF",
+        "category": "Mobile Tools",
+        "description": {
+            "en": "Mobile security framework for analyzing Android and iOS apps.",
+            "ar": "إطار أمان الجوال لتحليل تطبيقات Android و iOS."
+        },
+        "usage_example": "mobsf",
+        "official_docs": "https://github.com/MobSF/Mobile-Security-Framework-MobSF"
+    },
+    {
+        "tool_name": "Androguard",
+        "category": "Mobile Tools",
+        "description": {
+            "en": "Android app analysis tool for reverse engineering.",
+            "ar": "أداة تحليل تطبيق Android للهندسة العكسية."
+        },
+        "usage_example": "androguard",
+        "official_docs": "https://github.com/androguard/androguard"
+    },
+    {
+        "tool_name": "Drozer",
+        "category": "Mobile Tools",
+        "description": {
+            "en": "Android security assessment framework.",
+            "ar": "إطار تقييم أمان Android."
+        },
+        "usage_example": "drozer console connect",
+        "official_docs": "https://github.com/FSecureLABS/drozer"
+    },
+    {
+        "tool_name": "Hping3",
+        "category": "Network Tools",
+        "description": {
+            "en": "Network packet crafting tool for testing firewalls.",
+            "ar": "أداة صناعة حزم الشبكة لاختبار جدران الحماية."
+        },
+        "usage_example": "hping3 -S -p 80 target.com",
+        "official_docs": "http://www.hping.org/"
+    },
+    {
+        "tool_name": "Netdiscover",
+        "category": "Network Tools",
+        "description": {
+            "en": "Network address discovery tool for active hosts.",
+            "ar": "أداة اكتشاف عنوان الشبكة للمضيفين النشطين."
+        },
+        "usage_example": "netdiscover -r 192.168.1.0/24",
+        "official_docs": "https://github.com/alexxy/netdiscover"
+    },
+    {
+        "tool_name": "Masscan",
+        "category": "Network Tools",
+        "description": {
+            "en": "Mass IP port scanner for large-scale scanning.",
+            "ar": "ماسح منفذ IP الشامل للمسح واسع النطاق."
+        },
+        "usage_example": "masscan -p1-65535 192.168.1.0/24",
+        "official_docs": "https://github.com/robertdavidgraham/masscan"
+    },
+    {
+        "tool_name": "Iptables",
+        "category": "Network Tools",
+        "description": {
+            "en": "Firewall configuration tool for Linux.",
+            "ar": "أداة تكوين جدار الحماية لنظام Linux."
+        },
+        "usage_example": "iptables -L",
+        "official_docs": "https://linux.die.net/man/8/iptables"
+    },
+    {
+        "tool_name": "CloudBrute",
+        "category": "Cloud Tools",
+        "description": {
+            "en": "Cloud infrastructure enumeration tool.",
+            "ar": "أداة تعداد البنية التحتية السحابية."
+        },
+        "usage_example": "cloudbrute -d target.com",
+        "official_docs": "https://github.com/jhaddix/CloudBrute"
+    },
+    {
+        "tool_name": "S3Scanner",
+        "category": "Cloud Tools",
+        "description": {
+            "en": "Amazon S3 bucket scanner for finding misconfigured buckets.",
+            "ar": "ماسح دلو Amazon S3 للعثور على الدلاء التي تمت تهيئتها بشكل خاطئ."
+        },
+        "usage_example": "s3scanner scan --buckets-file bucket-names.txt",
+        "official_docs": "https://github.com/sa7mon/S3Scanner"
+    },
+    {
+        "tool_name": "Pacu",
+        "category": "Cloud Tools",
+        "description": {
+            "en": "AWS exploitation framework for testing cloud security.",
+            "ar": "إطار عمل استغلال AWS لاختبار أمان السحابة."
+        },
+        "usage_example": "pacu",
+        "official_docs": "https://github.com/RhinoSecurityLabs/pacu"
+    },
+    {
+        "tool_name": "Steghide",
+        "category": "Steganography Tools",
+        "description": {
+            "en": "Hides data in images and audio files.",
+            "ar": "يخفي البيانات في ملفات الصور والصوت."
+        },
+        "usage_example": "steghide embed -cf cover.jpg -ef secret.txt",
+        "official_docs": "https://steghide.sourceforge.net/"
+    },
+    {
+        "tool_name": "Snow",
+        "category": "Steganography Tools",
+        "description": {
+            "en": "Whitespace steganography tool for hiding data in text files.",
+            "ar": "أداة إخفاء المعلومات في المسافات البيضاء لإخفاء البيانات في ملفات النص."
+        },
+        "usage_example": "snow -C -m \"secret message\" -p \"password\" original.txt hidden.txt",
+        "official_docs": "https://darkside.com.au/snow/"
+    },
+    {
+        "tool_name": "SIPVicious",
+        "category": "VoIP Tools",
+        "description": {
+            "en": "SIP security testing suite for VoIP systems.",
+            "ar": "مجموعة اختبار أمان SIP لأنظمة VoIP."
+        },
+        "usage_example": "svmap target.com",
+        "official_docs": "https://github.com/EnableSecurity/sipvicious"
+    },
+    {
+        "tool_name": "Asterisk",
+        "category": "VoIP Tools",
+        "description": {
+            "en": "Open-source PBX testing tool for VoIP systems.",
+            "ar": "أداة اختبار PBX مفتوحة المصدر لأنظمة VoIP."
+        },
+        "usage_example": "asterisk -c",
+        "official_docs": "https://www.asterisk.org/get-started/"
+    },
+    {
+        "tool_name": "Bluelog",
+        "category": "Wireless Bluetooth Tools",
+        "description": {
+            "en": "Bluetooth discovery tool for finding nearby devices.",
+            "ar": "أداة اكتشاف البلوتوث للعثور على الأجهزة القريبة."
+        },
+        "usage_example": "bluelog",
+        "official_docs": "https://github.com/MS3FGX/Bluelog"
+    },
+    {
+        "tool_name": "Blueranger",
+        "category": "Wireless Bluetooth Tools",
+        "description": {
+            "en": "Bluetooth device locator for tracking devices.",
+            "ar": "محدد موقع جهاز البلوتوث لتتبع الأجهزة."
+        },
+        "usage_example": "blueranger",
+        "official_docs": "https://www.kali.org/tools/blueranger/"
+    },
+    {
+        "tool_name": "Redfang",
+        "category": "Wireless Bluetooth Tools",
+        "description": {
+            "en": "Bluetooth device discovery tool for hidden devices.",
+            "ar": "أداة اكتشاف جهاز البلوتوث للأجهزة المخفية."
+        },
+        "usage_example": "redfang -i hci0",
+        "official_docs": "https://www.kali.org/tools/redfang/"
+    },
+    {
+        "tool_name": "Searchsploit",
+        "category": "Exploitation Database",
+        "description": {
+            "en": "Command-line search tool for ExploitDB.",
+            "ar": "أداة بحث سطر الأوامر لـ ExploitDB."
+        },
+        "usage_example": "searchsploit apache 2.4.7",
+        "official_docs": "https://www.exploit-db.com/searchsploit"
+    },
+    {
+        "tool_name": "Sherlock",
+        "category": "OSINT",
+        "description": {
+            "en": "Username enumeration tool for finding accounts across platforms.",
+            "ar": "أداة تعداد اسم المستخدم للعثور على الحسابات عبر المنصات."
+        },
+        "usage_example": "sherlock username",
+        "official_docs": "https://github.com/sherlock-project/sherlock"
+    },
+    {
+        "tool_name": "SpiderFoot",
+        "category": "OSINT",
+        "description": {
+            "en": "OSINT automation tool for gathering intelligence.",
+            "ar": "أداة أتمتة OSINT لجمع المعلومات الاستخباراتية."
+        },
+        "usage_example": "spiderfoot -l 127.0.0.1:5001",
+        "official_docs": "https://github.com/smicallef/spiderfoot"
+    }
+]

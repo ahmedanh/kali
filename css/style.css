@@ -1,0 +1,322 @@
+:root {
+    --primary-color: #0f1923;
+    --secondary-color: #0c151e;
+    --accent-color: #00b9e8;
+    --text-color: #ffffff;
+    --bg-card: #1a2332;
+    --bg-hover: #2a3546;
+    --border-color: #2c3e50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.description {
+    max-width: 800px;
+    margin: 1rem auto;
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    flex: 1;
+}
+
+.section-title {
+    margin: 1.5rem 0 1rem;
+    color: var(--accent-color);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Search Box */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.search-box {
+    width: 90%;
+    max-width: 600px;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--bg-card);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.search-box:focus {
+    outline: 2px solid var(--accent-color);
+    box-shadow: 0 0 10px rgba(0, 185, 232, 0.3);
+}
+
+/* Categories */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.category-card {
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-left: 4px solid #00aaff;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background-color: #333333;
+}
+
+.category-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.category-card p {
+    margin: 0;
+    color: #aaaaaa;
+    font-size: 0.9rem;
+}
+
+.category-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #00aaff;
+}
+
+/* Tools List */
+.tools-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.tool-item {
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-left: 3px solid #00aaff;
+}
+
+.tool-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background-color: #333333;
+}
+
+.tool-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.tool-item .description {
+    color: #bbbbbb;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.tool-item .category-badge {
+    display: inline-block;
+    background-color: rgba(0, 170, 255, 0.2);
+    color: #00aaff;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+/* Tool Detail Popup */
+.tool-detail {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool-detail.active {
+    display: flex;
+}
+
+.tool-detail-content {
+    background-color: var(--bg-card);
+    padding: 2rem;
+    border-radius: 6px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.close-btn:hover {
+    color: var(--accent-color);
+}
+
+.tool-detail h2 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tool-detail .usage {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+    overflow-x: auto;
+    font-family: monospace;
+}
+
+.tool-detail .docs {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.tool-detail .docs:hover {
+    background-color: #0091b8;
+}
+
+/* Language Toggle */
+#langToggle {
+    background-color: var(--accent-color);
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+#langToggle:hover {
+    background-color: #0091b8;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.legal-notice {
+    color: #b0b0b0;
+    margin-bottom: 0.5rem;
+}
+
+[dir="rtl"] .tool-card h3 {
+    text-align: right;
+}
+
+[dir="rtl"] .description {
+    text-align: right;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .tools-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .tool-detail-content {
+        width: 95%;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .tools-list {
+        grid-template-columns: 1fr;
+    }
+}
